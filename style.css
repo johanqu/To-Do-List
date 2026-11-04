@@ -1,0 +1,106 @@
+body {
+  background-color: #220f3b;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: #121252;
+}
+
+.contenedor {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contenedor2 {
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+}
+
+.tarea {
+  flex: 1;
+  border: 0;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 16px;
+  outline: none;
+  font-family: inherit;
+}
+
+.boton {
+  border: 0;
+  border-radius: 25px;
+  background-color: #f7710a;
+  font-size: 16px;
+  padding: 8px 40px;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+}
+
+.lista input {
+  display: inline-grid;
+  place-content: center;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.lista input:checked {
+  background-color: #f7710a;
+  border-color: #f7710a;
+}
+
+.lista input:checked::after {
+  content: "";
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.lista button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.lista button:hover {
+  transform: scale(1.2);
+}
+
+.lista label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hecha {
+  text-decoration: line-through;
+  color: #aaa;
+}

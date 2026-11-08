@@ -59,6 +59,7 @@ h1 {
   -webkit-appearance: none;
   outline: none;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .lista input:checked {
